@@ -8,7 +8,7 @@
 
 typedef int Tipo_Dado;
 
-//Definição do tipo lista
+//Definicao do tipo lista
 struct elemento{
     Tipo_Dado dado;
     struct elemento *prox;

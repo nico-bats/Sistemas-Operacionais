@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ListaDinEncad.h"  //inclui os Protótipos
+#include "ListaDinEncad.h"  //inclui os Prototipos
 
 Lista* cria_lista()
 {
@@ -67,7 +67,7 @@ int insere_lista_final(Lista* li, Tipo_Dado dt)
         return ERRO;
     no->dado = dt;
     no->prox = NULL;
-    if((*li) == NULL){ //lista vazia: insere início
+    if((*li) == NULL){ //lista vazia: insere inicio
         *li = no;
     }else{
         Elem *aux;
@@ -91,7 +91,7 @@ int remove_lista(Lista* li, Tipo_Dado dt)
         ant = no;
         no = no->prox;
     }
-    if(no == NULL) //não encontrado
+    if(no == NULL) //nao encontrado
         return ERRO;
 
     if(no == *li) //remover o primeiro?
